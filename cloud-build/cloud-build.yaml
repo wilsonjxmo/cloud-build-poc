@@ -1,0 +1,6 @@
+steps:
+- name: 'gcr.io/cloud-builders/curl'
+  args: ['-v', 'http://service.onprem']
+options:
+  pool:
+    name: 'projects/usecase-eu-dev/locations/europe-west2/workerPools/usecase-private-pool'
