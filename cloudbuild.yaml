@@ -7,7 +7,7 @@ steps:
 #  secretEnv: SECRET
 options:
   pool:
-    name: 'projects/usecase-eu-dev/locations/europe-west2/workerPools/usecase-private-pool-external'
+    name: 'projects/usecase-eu-dev/locations/europe-west2/workerPools/usecase-private-pool'
 #availableSecrets:
 #  secretManager:
 #  - versionName: 'projects/usecase2-eu-dev/secrets/usecase2-secret/versions/latest'
