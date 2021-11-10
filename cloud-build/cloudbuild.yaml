@@ -1,6 +1,14 @@
 steps:
 - name: 'gcr.io/cloud-builders/curl'
-  args: ['-v', 'http://service.onprem']
+  args: ['-v', '-k', 'https://api.github.com/']
+#- name: 'gcr.io/cloud-builders/docker'
+#  entrypoint: 'bash'
+#  args: ['-c', 'echo  The password: $$SECRET']
+#  secretEnv: SECRET
 options:
   pool:
-    name: 'projects/usecase-eu-dev/locations/europe-west2/workerPools/usecase-private-pool'
+    name: 'projects/usecase-eu-dev/locations/europe-west2/workerPools/usecase-private-pool-external'
+#availableSecrets:
+#  secretManager:
+#  - versionName: 'projects/usecase2-eu-dev/secrets/usecase2-secret/versions/latest'
+#    env: SECRET
