@@ -1,7 +1,9 @@
 steps:
-- id: step1.1.1.1.1
+- id: step1.1
   name: 'gcr.io/cloud-builders/curl'
-  args: ['-v', '-k', 'https://api.github.com/']
+  args: ['-v', '-k', 'https://github.onprem/api/v3/meta']
 
 options:
   logging: CLOUD_LOGGING_ONLY
+  pool:
+    name: 'projects/usecase-eu-dev/locations/europe-west2/workerPools/private-pool'
