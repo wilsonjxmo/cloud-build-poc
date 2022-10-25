@@ -1,5 +1,5 @@
 steps:
-- id: step1.1.1.1.1
+- id: step1.1.1.1.1.1
   name: 'gcr.io/cloud-builders/curl'
   args: ['-v', '-k', 'https://api.github.com/']
 
